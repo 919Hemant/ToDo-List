@@ -11,6 +11,10 @@ A modern and user-friendly Todo list web application built with **React** and **
 - ✅ Clean, responsive UI
 - ✅ Task counter
 
+## Live Demo
+
+Check out the live application: [Todo List App](https://919hemant.github.io/ToDo-List/)
+
 ## Project Structure
 
 ```bash
@@ -50,6 +54,7 @@ Before you begin, ensure you have the following installed:
 
 - Node.js (v14 or later)
 - npm or yarn
+- Git (for deployment to GitHub Pages)
 
 ## Getting Started
 
@@ -79,6 +84,37 @@ npm run dev
 ```
 http://localhost:5173/
 ```
+
+## Deployment to GitHub Pages
+
+1. Set the correct `homepage` in your package.json:
+```json
+"homepage": "https://yourusername.github.io/your-repo-name/"
+```
+
+2. Set the correct base in vite.config.js:
+```js
+base: '/your-repo-name/'
+```
+
+3. Build and deploy the application:
+```bash
+npm run build
+npm run deploy
+```
+
+## Troubleshooting GitHub Pages Blank Page Issues
+
+If you encounter a blank page when deploying to GitHub Pages:
+
+1. Ensure your package.json has the correct homepage URL
+2. Make sure vite.config.js has the correct base path matching your repository name
+3. Update your index.html script path to use a relative path:
+```html
+<script type="module" src="./src/main.jsx"></script>
+```
+4. Verify that Git is installed and in your PATH
+5. Check your GitHub repository settings to ensure Pages is correctly configured
 
 ## Application Components
 
