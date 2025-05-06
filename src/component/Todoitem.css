@@ -1,0 +1,114 @@
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    transition: background-color 0.2s ease;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.item-container:hover {
+    background-color: #f9f7ff;
+}
+
+.edit-btn, .delete-btn, .save-btn {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8a4bfc;
+}
+
+.delete-btn {
+    color: #ff5252;
+}
+
+.edit-btn:hover, .save-btn:hover {
+    background-color: rgba(138, 75, 252, 0.1);
+}
+
+.delete-btn:hover {
+    background-color: rgba(255, 82, 82, 0.1);
+}
+
+.tick-btn {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8a4bfc;
+    border: 2px solid #8a4bfc;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 12px;
+}
+
+.tick-btn:hover {
+    background-color: rgba(138, 75, 252, 0.1);
+}
+
+.left-cont {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.todo-value {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.2s ease;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    color: #999;
+}
+
+.input-field {
+    padding: 8px 12px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #8a4bfc;
+    color: #333;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 100%;
+    min-width: 200px;
+}
+
+.input-field:focus {
+    box-shadow: 0 0 0 2px rgba(138, 75, 252, 0.2);
+}
+
+.btn-container {
+    display: flex;
+    gap: 4px;
+}
+
+.completed-item .tick-btn {
+    background-color: #8a4bfc;
+    color: white;
+    border-color: #8a4bfc;
+}
+
+.completed-item .edit-btn {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .input-field {
+        min-width: 150px;
+    }
+}

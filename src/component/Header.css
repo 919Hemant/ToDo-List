@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.todo-container{
+   width: 100%;
+   background-color: white;
+   border-radius: 16px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+}
+.header-section {
+    background-color: #8a4bfc;
+    color: white;
+    padding: 25px 20px;
+    text-align: center;
+}
+.header{
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+.inputbox{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+#input-box{
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: border 0.2s ease;
+}
+#input-box:focus{
+    border: 1px solid #8a4bfc;
+    box-shadow: 0 0 0 2px rgba(138, 75, 252, 0.2);
+}
+#input-box::placeholder {
+    color: #aaa;
+}
+.add-btn{
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #8a4bfc;
+    color: white;
+    transition: background-color 0.2s ease;
+    min-width: 120px;
+}
+.add-btn:hover{
+    background-color: #7a3bd8;
+}
+
+@media (max-width:768px) {
+    .inputbox {
+        flex-direction: column;
+    }
+    
+    .add-btn {
+        width: 100%;
+    }
+}
+@media (max-width:500px){
+    html{
+        font-size: 12px;
+    }
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.task-stats {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+.task-stats span {
+    font-weight: 600;
+    color: #8a4bfc;
+}

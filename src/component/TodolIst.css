@@ -1,0 +1,17 @@
+.todolist-container {
+    width: 100%;
+    padding: 0 0 20px 0;
+    background-color: white;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+.empty-list-message {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-size: 14px;
+}
