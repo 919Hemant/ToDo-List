@@ -13,19 +13,22 @@ A modern and user-friendly Todo list web application built with **React** and **
 
 ## Live Demo
 
-Check out the live application: [Todo List App](https://919hemant.github.io/ToDo-List/)
+Check out the live application: [Todo List App on Vercel](https://to-do-list-dw39.vercel.app/)
 
+## Source Code
+
+View the source code on GitHub: [GitHub Repository](https://github.com/919Hemant/ToDo-List)
 
 ## Getting Started
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/919Hemant/ToDo-List.git
 ```
 
 2. Navigate into the project directory
 ```bash
-cd TodoApp
+cd ToDo-List
 ```
 
 3. Install the dependencies
